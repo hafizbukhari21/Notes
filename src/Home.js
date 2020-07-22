@@ -34,6 +34,8 @@ export default class Home extends React.Component{
 
             
         }
+        
+        localStorage.setItem("backup",JSON.stringify(this.state.todo_list))
 
         this.handlechage = this.handlechage.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
